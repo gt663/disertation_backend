@@ -36,7 +36,9 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin:[ 'http://localhost:3000',
+             'https://gt663.github.io'
+    ],
     methods: ['GET', 'POST', 'PUT', 'OPTIONS'],
     credentials: true
 };
